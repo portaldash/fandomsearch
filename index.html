@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fandomsearch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>fandomsearch</h1>
+            <p>hard to find a wiki? i gotchu</p>
+        </header>
+
+        <!-- Search and Filters -->
+        <section class="filters">
+            <input type="text" id="searchInput" placeholder="Search for wikis...">
+            <select id="sortSelect">
+                <option value="created_at">Sort by Date Created</option>
+                <option value="articles">Sort by Articles</option>
+                <option value="edits">Sort by Edits</option>
+                <option value="users">Sort by Users</option>
+                <option value="wiki_id">Sort by Wiki ID</option>
+            </select>
+            <select id="orderSelect">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+            <button id="searchButton">Search</button>
+        </section>
+
+        <!-- Pagination Controls -->
+        <section id="pagination"></section>
+
+        <!-- Search Results -->
+        <section id="results" class="results-section">
+            <p class="placeholder">Search for wikis to see results here.</p>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 fandomsearch. built with ❤️ by pd</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
